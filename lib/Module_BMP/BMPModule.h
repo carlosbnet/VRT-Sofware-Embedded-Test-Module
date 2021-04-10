@@ -8,8 +8,8 @@
 #include <Adafruit_BMP280.h>
 #include <Adafruit_Sensor.h>
 
-#define DEFAULT_ADDRESS  0x76
-#define DEFAULT_DELAY_MS 2000
+#define DEFAULT_ADDRESS_BMP  0x76
+#define DEFAULT_DELAY_MS 1000
 
 class BMPModule : public TwoWire, public Adafruit_BMP280
 {

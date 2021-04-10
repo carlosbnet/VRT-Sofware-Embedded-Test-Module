@@ -11,7 +11,7 @@ uint8_t AcX, AcY,  AcZ, Tmp,  GyX,  GyY,  GyZ;
 
 MPUModule::MPUModule(void)
 {
-    _port = DEFAULT_ADDRESS;
+    _port = DEFAULT_ADDRESS_MPU;
 }
 
 MPUModule::MPUModule(byte port)

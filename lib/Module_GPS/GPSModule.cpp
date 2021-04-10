@@ -15,7 +15,11 @@ GPSModule::GPSModule(uint8_t rx, uint8_t tx): SoftwareSerial(rx, tx), TinyGPSPlu
 {
     RX_PIN = rx;
     TX_PIN = tx;
+
 }
+
+
+
 
 
 void GPSModule::begin(){
@@ -35,6 +39,7 @@ void GPSModule::begin(uint32_t baud){
 }
 
 
+
 DynamicJsonDocument GPSModule::createJson(){
 
   DynamicJsonDocument build = this->buildJson();
@@ -43,7 +48,6 @@ DynamicJsonDocument GPSModule::createJson(){
 
     return build;
 }
-
 
 
 void GPSModule::customDelay(uint32_t MS){

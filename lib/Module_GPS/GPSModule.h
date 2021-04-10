@@ -10,12 +10,14 @@
 #define DEFAULT_TX_PIN  3
 #define DEFAULT_BAUD_RATE  9600
 #define DEFAULT_DELAY_MS 1000
+#define DEFAULT_SERIAL_PORT 0
 
 class GPSModule : public SoftwareSerial, public TinyGPSPlus
 {
 private:
 
     uint32_t _baud;
+
 
 public:
 
@@ -28,6 +30,7 @@ public:
     //Contrutor
     GPSModule();
     GPSModule(uint8_t rx, uint8_t tx);
+    
 
 
     //Metodos

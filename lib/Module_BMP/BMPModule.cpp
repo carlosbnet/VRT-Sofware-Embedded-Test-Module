@@ -7,7 +7,7 @@
 
 BMPModule::BMPModule(void)
 {
-    _port = DEFAULT_ADDRESS;
+    _port = DEFAULT_ADDRESS_BMP;
 }
 
 BMPModule::BMPModule(byte port)
@@ -27,8 +27,6 @@ void BMPModule::begin(){
 DynamicJsonDocument BMPModule::createJson(){
 
   DynamicJsonDocument build = this->buildJson();
-
-    delay(DEFAULT_DELAY_MS);
 
     return build;
 }

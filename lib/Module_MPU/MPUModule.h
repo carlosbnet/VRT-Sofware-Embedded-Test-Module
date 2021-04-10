@@ -6,7 +6,7 @@
 #include <ArduinoJson.h>
 #include <Wire.h>
 
-#define DEFAULT_ADDRESS  0x68
+#define DEFAULT_ADDRESS_MPU  0x68
 #define DEFAULT_DELAY_MS 1000
 
 class MPUModule : public TwoWire
